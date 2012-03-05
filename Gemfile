@@ -62,3 +62,5 @@ gem "launchy", :group => :test
 gem "rails3-generators", :group => :development
 gem "omniauth"
 gem "fakeweb", :group => :test
+gem "capistrano"
+gem "capistrano-ext", :require => "capistrano"
