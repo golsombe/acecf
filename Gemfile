@@ -60,3 +60,5 @@ gem "database_cleaner", "~> 0.5.0", :group => :test
 gem "pickle", "~> 0.4.2", :group => :test
 gem "launchy", :group => :test
 gem "rails3-generators", :group => :development
+gem "omniauth"
+gem "fakeweb", :group => :test
