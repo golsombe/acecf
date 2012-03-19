@@ -1,4 +1,14 @@
 Acecf::Application.routes.draw do
+  resources :customers
+
+  resources :customer_policies
+
+  resources :product_states
+
+  resources :products
+
+  resources :states
+
   match '/logout', :to => 'sessions#destroy'
 
   match '/auth/:provider/callback', :to => 'sessions#create'

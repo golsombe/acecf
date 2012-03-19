@@ -1,0 +1,25 @@
+%h1 Listing product_states
+
+%table
+  %tr
+    %th Product
+    %th State
+    %th Description
+    %th Unit price
+    %th
+    %th
+    %th
+
+  - @product_states.each do |product_state|
+    %tr
+      %td= product_state.product_id
+      %td= product_state.state_id
+      %td= product_state.description
+      %td= product_state.unit_price
+      %td= link_to 'Show', product_state
+      %td= link_to 'Edit', edit_product_state_path(product_state)
+      %td= link_to 'Destroy', product_state, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Product state', new_product_state_path

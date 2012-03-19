@@ -1,0 +1,33 @@
+%h1 Listing customer_policies
+
+%table
+  %tr
+    %th Customer
+    %th Product
+    %th Quoted price
+    %th Quoted dt
+    %th Actual price
+    %th Policy start
+    %th Policy end
+    %th Notes
+    %th
+    %th
+    %th
+
+  - @customer_policies.each do |customer_policy|
+    %tr
+      %td= customer_policy.customer_id
+      %td= customer_policy.product_id
+      %td= customer_policy.quoted_price
+      %td= customer_policy.quoted_dt
+      %td= customer_policy.actual_price
+      %td= customer_policy.policy_start
+      %td= customer_policy.policy_end
+      %td= customer_policy.notes
+      %td= link_to 'Show', customer_policy
+      %td= link_to 'Edit', edit_customer_policy_path(customer_policy)
+      %td= link_to 'Destroy', customer_policy, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Customer policy', new_customer_policy_path

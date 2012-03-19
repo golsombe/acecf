@@ -10,7 +10,7 @@ gem 'mysql2'
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do
+#group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
@@ -18,7 +18,7 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
-end
+#end
 
 
 
@@ -59,8 +59,13 @@ gem "capybara", "~> 0.4.1", :group => :test
 gem "database_cleaner", "~> 0.5.0", :group => :test
 gem "pickle", "~> 0.4.2", :group => :test
 gem "launchy", :group => :test
-gem "rails3-generators", :group => :development
+gem "rails3-generators"
+#, :group => :development
 gem "omniauth"
+gem "omniauth-twitter"
+gem "omniauth-facebook"
+gem "omniauth-google-oauth2"
+gem "omniauth-http-basic"
 gem "fakeweb", :group => :test
 gem "capistrano"
 gem "capistrano-ext", :require => "capistrano"

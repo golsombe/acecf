@@ -17,16 +17,17 @@ end
 
 module Acecf
   class Application < Rails::Application
-      config.generators do |g|
-      g.orm :active_record
-      g.stylesheets false
-      g.template_engine :haml
-      g.test_framework  :shoulda, :fixture_replacement => :factory_girl
-      g.fallbacks[:shoulda] = :test_unit
-      g.integration_tool :test
-      g.helper false
-      g.form_builder :formtastic
-    end
+      config.app_generators do |g|
+	      g.orm :active_record
+	      g.stylesheets false
+	      g.template_engine :haml
+	      g.test_framework  :shoulda, :fixture_replacement => :factory_girl
+	      g.fallbacks[:shoulda] = :test_unit
+	      g.integration_tool :test
+	      g.helper false
+	      g.form_builder :formtastic
+     end
+
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

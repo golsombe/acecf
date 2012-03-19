@@ -1,0 +1,19 @@
+= semantic_attributes_for @customer do |s|
+  = s.attributes do
+    = s.attribute :customer_iden
+    = s.attribute :f_name
+    = s.attribute :m_name
+    = s.attribute :l_name
+    = s.attribute :address1
+    = s.attribute :address2
+    = s.attribute :city
+    = s.attribute :state_id
+    = s.attribute :postal
+    = s.attribute :w_phone
+    = s.attribute :h_phone
+    = s.attribute :m_phone
+    = s.attribute :email
+    = s.attribute :username
+    = s.attribute :password
+
+== #{link_to 'Edit', edit_customer_path(@customer) } | #{ link_to 'Back', customers_path }

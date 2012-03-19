@@ -1,0 +1,6 @@
+= semantic_attributes_for @product do |s|
+  = s.attributes do
+    = s.attribute :name
+    = s.attribute :long_name
+
+== #{link_to 'Edit', edit_product_path(@product) } | #{ link_to 'Back', products_path }

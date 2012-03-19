@@ -1,0 +1,47 @@
+%h1 Listing customers
+
+%table
+  %tr
+    %th Customer iden
+    %th F name
+    %th M name
+    %th L name
+    %th Address1
+    %th Address2
+    %th City
+    %th State
+    %th Postal
+    %th W phone
+    %th H phone
+    %th M phone
+    %th Email
+    %th Username
+    %th Password
+    %th
+    %th
+    %th
+
+  - @customers.each do |customer|
+    %tr
+      %td= customer.customer_iden
+      %td= customer.f_name
+      %td= customer.m_name
+      %td= customer.l_name
+      %td= customer.address1
+      %td= customer.address2
+      %td= customer.city
+      %td= customer.state_id
+      %td= customer.postal
+      %td= customer.w_phone
+      %td= customer.h_phone
+      %td= customer.m_phone
+      %td= customer.email
+      %td= customer.username
+      %td= customer.password
+      %td= link_to 'Show', customer
+      %td= link_to 'Edit', edit_customer_path(customer)
+      %td= link_to 'Destroy', customer, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Customer', new_customer_path

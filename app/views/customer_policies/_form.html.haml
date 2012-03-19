@@ -1,0 +1,11 @@
+= semantic_form_for @customer_policy do |form|
+  = form.inputs do
+    = form.input :customer, :label => 'Customer'
+    = form.input :product, :label => 'Product'
+    = form.input :quoted_price, :label => 'Quoted Price'
+    = form.input :quoted_dt, :label => 'Quoted Dt'
+    = form.input :actual_price, :label => 'Actual Price'
+    = form.input :policy_start, :label => 'Policy Start'
+    = form.input :policy_end, :label => 'Policy End'
+    = form.input :notes, :label => 'Notes'
+  = form.buttons

@@ -1,0 +1,12 @@
+= semantic_attributes_for @customer_policy do |s|
+  = s.attributes do
+    = s.attribute :customer_id
+    = s.attribute :product_id
+    = s.attribute :quoted_price
+    = s.attribute :quoted_dt
+    = s.attribute :actual_price
+    = s.attribute :policy_start
+    = s.attribute :policy_end
+    = s.attribute :notes
+
+== #{link_to 'Edit', edit_customer_policy_path(@customer_policy) } | #{ link_to 'Back', customer_policies_path }

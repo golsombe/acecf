@@ -1,0 +1,8 @@
+= semantic_attributes_for @product_state do |s|
+  = s.attributes do
+    = s.attribute :product_id
+    = s.attribute :state_id
+    = s.attribute :description
+    = s.attribute :unit_price
+
+== #{link_to 'Edit', edit_product_state_path(@product_state) } | #{ link_to 'Back', product_states_path }

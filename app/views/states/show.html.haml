@@ -1,0 +1,6 @@
+= semantic_attributes_for @state do |s|
+  = s.attributes do
+    = s.attribute :name
+    = s.attribute :long_name
+
+== #{link_to 'Edit', edit_state_path(@state) } | #{ link_to 'Back', states_path }

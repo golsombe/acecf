@@ -34,5 +34,6 @@ Acecf::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  config.logger = Logger.new("log/development.log", 1, 5000000)
 end
-config.logger = Logger.new(config.paths.log.first, 1, 5.megabytes)
+#config.logger = Logger.new("log/development.log", 1, 5000000)
